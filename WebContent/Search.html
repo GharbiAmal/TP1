@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search</title>
+<style>
+#container{
+    width:400px;
+    margin:0 auto;
+    margin-top:10%;
+}
+
+form {
+    width:100%;
+    padding: 60px;
+    border: 4px solid #f1f1f1;
+    background: #d6d6c2;
+}
+
+
+
+input[type=submit] {
+    background-color: #adad85;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    float:right;
+    
+}
+input[type=submit]:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}
+
+</style>
+</head>
+<body>
+<div id="container">
+<form method="post" action="SearchServlet">
+<br> 
+<table>
+<tr>
+<td> Votre Recherche:</td>
+<td> <input type = "text" name="recherche" size="40" value=""></td>
+</tr>
+<tr>
+<td>Moteur de recherche:</td>
+<td><select name="moteur">
+<option value="g" selected> Google </option>
+<option value="y"> Yahoo </option>
+</select>
+</td>
+</tr>
+</table>
+<input type="submit" value="Submit"/>
+
+
+
+</form>
+</div>
+</body>
+</html>
